@@ -16,6 +16,10 @@ Paragraphs must be separated by a blank line. Basic formatting of *italics* and 
 
 1. Item 1
 2. A second item
+
+   1. Nested
+   2. List
+   3. in List
 3. Number 3
 4. Ⅳ
 
@@ -24,9 +28,20 @@ Paragraphs must be separated by a blank line. Basic formatting of *italics* and 
 ### Unordered list
 
 * An item
+
+  A paragraph in item
+
 * Another item
+
+  A paragraph in item
+
 * Yet another item
+
+  A paragraph in item
+
 * And there's more...
+
+  A paragraph in item
 
 ## Paragraph modifiers
 
@@ -43,6 +58,16 @@ You can also make `inline code` to add code into other things.
 ## Headings
 
 There are six levels of headings. They correspond with the six levels of HTML headings. You've probably noticed them already in the page. Each level down uses one more hash character.
+
+## h2 heading
+
+### h3 heading
+
+#### h4 heading
+
+##### h5 heading
+
+###### h6 heading
 
 ### Headings *can* also contain **formatting**
 
@@ -71,6 +96,14 @@ It's sometimes handy for breaking things up.
 ## Images
 
 Markdown can also contain images. I'll need to add something here sometime.
+
+## Tables
+
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
 
 ## Finally
 
