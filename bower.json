@@ -1,0 +1,26 @@
+{
+  "name": "printable-css",
+  "description": "provide printable css styles for markdown exported html",
+  "main": "",
+  "authors": [
+    "reorx <novoreorx@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "css",
+    "markdown",
+    "style"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "marked": "~0.3.5"
+  }
+}

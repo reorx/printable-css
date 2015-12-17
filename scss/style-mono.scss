@@ -1,0 +1,243 @@
+body {
+  word-wrap: break-word;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+blockquote,
+em,
+strong,
+code {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: consolas, monaco, courier, "courier new", fixed-width;
+  color: #222;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+blockquote,
+ol,
+ul,
+li,
+p,
+section,
+header,
+footer {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+p,
+ul,
+ol,
+pre,
+blockquote {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h1 {
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+h1:before,
+h2:before,
+h3:before,
+h4:before,
+h5:before,
+h6:before {
+  content: "##";
+  position: absolute;
+  width: 5em;
+  left: -5.5em;
+  text-align: right;
+  display: block;
+}
+h1:before {
+  content: "#";
+}
+h2:before {
+  content: "##";
+}
+h3:before {
+  content: "###";
+}
+h4:before {
+  content: "####";
+}
+h5:before {
+  content: "#####";
+}
+h6:before {
+  content: "######";
+}
+li {
+  position: relative;
+  display: block;
+  padding-left: 0;
+}
+li:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Block elements */
+/*
+body > ul,
+body > p,
+body > blockquote {
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre, hr, ul, ol, p, blockquote {
+  margin-left: 5.5em;
+}
+blockquote > p,
+li > p {
+  margin-left: 0;
+}
+
+ol > li:before,
+ul > li:before {
+  content: "-";
+  width: 5em;
+  left: -5.5em;
+  text-align: right;
+  display: block;
+  position: absolute;
+  /*
+  display: inline-block;
+  width: 5em;
+  padding-right: .5em;
+  text-align: right;
+  */
+}
+ol {
+  counter-reset: ol;
+}
+ol > li:before {
+  content: counter(ol) ".";
+  counter-increment: ol;
+}
+blockquote {
+  position: relative;
+  padding-left: 17px;
+  padding-left: 2ch;
+  overflow: hidden;
+}
+blockquote:after {
+  content: ">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";
+  white-space: pre;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+strong {
+  font-weight: bold;
+}
+strong:before,
+strong:after {
+  content: "**";
+  display: inline;
+}
+em {
+  font-style: italic;
+  color: #666;
+}
+em:before,
+em:after {
+  content: "_";
+  display: inline;
+}
+a {
+  text-decoration: none;
+}
+a:before {
+  content: "[";
+  display: inline;
+}
+a:after {
+  content: "](" attr(href) ")";
+  display: inline;
+}
+a:before,
+a:after {
+  color: #b5b5b5;
+}
+code {
+  font-weight: 100;
+}
+code:before,
+code:after {
+  content: "`";
+  display: inline;
+}
+pre {
+}
+pre code {
+  font-family: "courier new";
+  display: block;
+  padding-left: 2em;
+}
+pre code:before,
+pre code:after {
+  content: none;
+}
+hr {
+  display: block;
+  position: relative;
+  height: 20px;
+  line-height: 0;
+  overflow: hidden;
+  border: 0;
+  margin-bottom: 20px;
+}
+hr:after {
+  content: "---";
+  font-size: 14px;
+  line-height: 20px;
+}
+@-moz-document url-prefix() {
+  h1 {
+    display: block;
+  }
+}
+.markdown-ones ol > li:after {
+  content: "1.";
+}
+
+@media print {
+  h1 {
+    color: red;
+    margin-left: 5.25em;
+  }
+}

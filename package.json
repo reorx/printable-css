@@ -1,0 +1,19 @@
+{
+  "name": "printable-css",
+  "version": "1.0.0",
+  "description": "provide printable css styles for markdown exported html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm/npm.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.7.1",
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
