@@ -1,0 +1,3 @@
+[submodule "typebase.css"]
+	path = typebase.css
+	url = git@github.com:devinhunt/typebase.css.git
