@@ -10,18 +10,19 @@
       body > div {
         margin: 2em auto;
         padding: 2em;
-        width: 900px;
+        padding-top: 1.5em;
+        width: 960px;
+        box-sizing: border-box;
       
         /* Decorations */
-        border: 1px solid #ccc;
-        box-shadow: 0 0 8px rgba(200, 200, 200, .6);
+        border: 1px solid #ddd;
         background: #fff;
       }
       @media print {
         /* Remove border & shadow of wrapper div for print */
         body > div {
           border: none;
-          box-shadow: none;
+          margin: 0 auto;
         }
       }
     </style>
@@ -29,7 +30,7 @@
     <link rel="stylesheet" href="css/style-clarity.css" media="all">
   </head>
   <body>
-    <div class="clarity"><h1 id="an-exhibit-of-markdown">An exhibit of Markdown</h1>
+    <div class="style-clarity"><h1 id="an-exhibit-of-markdown">An exhibit of Markdown</h1>
 <p>This note demonstrates some of what <a href="http://daringfireball.net/projects/markdown/">Markdown</a> is capable of doing.</p>
 <p><em>Note: Feel free to play with this page. Unlike regular notes, this doesn&#39;t automatically save itself.</em></p>
 <h2 id="basic-formatting">Basic formatting</h2>
@@ -39,17 +40,31 @@
 <h3 id="ordered-list">Ordered list</h3>
 <ol>
 <li>Item 1</li>
-<li>A second item</li>
+<li><p>A second item</p>
+<ol>
+<li>Nested</li>
+<li>List</li>
+<li>in List</li>
+</ol>
+</li>
 <li>Number 3</li>
 <li>Ⅳ</li>
 </ol>
 <p><em>Note: the fourth item uses the Unicode character for <a href="http://www.fileformat.info/info/unicode/char/2163/index.htm">Roman numeral four</a>.</em></p>
 <h3 id="unordered-list">Unordered list</h3>
 <ul>
-<li>An item</li>
-<li>Another item</li>
-<li>Yet another item</li>
-<li>And there&#39;s more...</li>
+<li><p>An item</p>
+<p>A paragraph in item</p>
+</li>
+<li><p>Another item</p>
+<p>A paragraph in item</p>
+</li>
+<li><p>Yet another item</p>
+<p>A paragraph in item</p>
+</li>
+<li><p>And there&#39;s more...</p>
+<p>A paragraph in item</p>
+</li>
 </ul>
 <h2 id="paragraph-modifiers">Paragraph modifiers</h2>
 <h3 id="code-block">Code block</h3>
@@ -61,6 +76,11 @@
 </blockquote>
 <h2 id="headings">Headings</h2>
 <p>There are six levels of headings. They correspond with the six levels of HTML headings. You&#39;ve probably noticed them already in the page. Each level down uses one more hash character.</p>
+<h2 id="h2-heading">h2 heading</h2>
+<h3 id="h3-heading">h3 heading</h3>
+<h4 id="h4-heading">h4 heading</h4>
+<h5 id="h5-heading">h5 heading</h5>
+<h6 id="h6-heading">h6 heading</h6>
 <h3 id="headings-can-also-contain-formatting-">Headings <em>can</em> also contain <strong>formatting</strong></h3>
 <h3 id="they-can-even-contain-inline-code-">They can even contain <code>inline code</code></h3>
 <p>Of course, demonstrating what headings look like messes up the structure of the page.</p>
@@ -78,6 +98,33 @@
 <p>It&#39;s sometimes handy for breaking things up.</p>
 <h2 id="images">Images</h2>
 <p>Markdown can also contain images. I&#39;ll need to add something here sometime.</p>
+<h2 id="tables">Tables</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Left-Aligned</th>
+<th style="text-align:center">Center Aligned</th>
+<th style="text-align:right">Right Aligned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">col 3 is</td>
+<td style="text-align:center">some wordy text</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td style="text-align:left">col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td style="text-align:left">zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
 <h2 id="finally">Finally</h2>
 <p>There&#39;s actually a lot more to Markdown than this. See the official <a href="http://daringfireball.net/projects/markdown/basics">introduction</a> and <a href="http://daringfireball.net/projects/markdown/syntax">syntax</a> for more information. However, be aware that this is not using the official implementation, and this might work subtly differently in some of the little things.</p>
 
