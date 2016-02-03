@@ -2,3 +2,5 @@ config.codekit
 node_modules
 bower_components
 .sass-cache/
+css/
+*.html

@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    block declaration
+
+    block title
+      title Printable CSS
+    style.
+      /* Add some style for a clear preview, note the width of div
+      represent the real width (as seen) of the print pdf */
+      html {
+      }
+      body > div {
+        margin: 2em auto;
+        padding: 2em;
+        padding-top: 1.5em;
+        width: 960px;
+        box-sizing: border-box;
+
+        /* Decorations */
+        border: 1px solid #ddd;
+        background: #fff;
+      }
+      @media print {
+        /* Remove border & shadow of wrapper div for print */
+        body > div {
+          border: none;
+          margin: 0 auto;
+        }
+      }
+    link(rel="stylesheet", href="bower_components/normalize-css/normalize.css")
+    block css
+  body
+
+    div(class=style_class_name)
+      include:markdown example-cn.md
